@@ -12,3 +12,7 @@
 */
 
 Route::get('/', 'HomeController@index' );
+
+Route::get('teachers/{department}/{shortName}', 'TeacherController@showProfile' );
+
+Route::get('teachers/{department}/', 'TeacherController@showTeachers');
